@@ -1,9 +1,9 @@
 ---
-- hosts: webserver
+- hosts: webservers
   become:  yes
   gather_facts: yes
   tasks:
-  - name: i want to install webserver on ansible node
+  - name: i want to install webserver on ansible nodes
     apt:
      name: apache2
      state: present
