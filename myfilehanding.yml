@@ -1,0 +1,7 @@
+---
+- hosts: 172.31.8.44
+  become: yes
+  tasks:
+  - name: create a file on ansible nodes
+    file:
+     path: /home/ubuntu/mytestfile
