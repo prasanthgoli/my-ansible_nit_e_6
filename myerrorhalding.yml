@@ -1,0 +1,17 @@
+---
+- hosts: 172.31.8.44
+  become: yes
+  tasks:
+  - name: installgit
+    apt:
+     name: git
+     state: present
+  - name: installtrees
+    apt:
+     name: treees
+     state: present
+    ignore_errors: yes
+  - name: installwget
+    apt:
+     name: wget
+     state: present
