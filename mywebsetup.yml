@@ -1,0 +1,5 @@
+---
+- hosts: 172.31.8.44
+  become: yes
+  roles: 
+  - mywebrole
