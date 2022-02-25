@@ -3,9 +3,9 @@
 172.31.0.56
 
 
-[myapplicationservers]
-172.31.21.11
-172.31.21.12
+
+[myapplicationserver]
+172.31.12.158
 
 [myDBservers]
 172.31.21.21
