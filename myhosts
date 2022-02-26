@@ -6,6 +6,7 @@
 
 [myapplicationserver]
 172.31.16.148
+172.31.12.158
 
 [myDBservers]
 172.31.21.21
