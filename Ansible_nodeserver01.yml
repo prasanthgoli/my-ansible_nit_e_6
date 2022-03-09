@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: i want to create ansible nodes
+    ec2:
+    key_name: mykey
+    instance_type: t2.micro
+    image: ami-0acdaff956c18ad52
+    wait: yes
+    group: launch-wizard-7
+    count: 2
+    region: us-west-2
+    vpc_subnet_id: subnet-0705dfab3727986da
+    assign_public_ip: yes
+    instance_tags:
+      name: Ansible_nodeservero1
